@@ -1,0 +1,127 @@
+*{
+  box-sizing: border-box;
+}
+body{
+	margin: 0 auto;
+	padding: 0;
+	background-size: cover;
+	background-image: url(../abstract-art-artistic-1020315.jpg);
+	background-repeat: no-repeat;
+	color: #fff;
+	height: 100vh;
+}
+h2{
+	font-size: 15px;
+}
+#test_status{
+	box-shadow: 0 10px 6px -6px #777;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	color: #fff;
+	width: 500px;
+	height: 40px;
+	background-color: rgba(19, 25, 21, 0.8);
+	padding-left: 15px;
+	padding-top: 11px;
+	border-radius: 13px;
+	margin: auto;
+	margin-top: 210px;
+}
+#test{
+	width: 500px;
+	height: 210px;
+	background-color: rgba(19, 25, 21, 0.8);
+	margin:auto;
+	margin-top: 25px;
+	position: relative;
+}
+#test:before , #test:after{
+	z-index: -1;
+	position: absolute;
+	content: '';
+	bottom: 25px;
+	left: 10px;
+	width: 50%;
+	top: 80%;
+	max-width: 300px;
+	background-color: #777;
+	box-shadow: 0 35px 20px #777;
+	-webkit-box-shadow: 0 35px 20px #777;
+	-moz-box-shadow: 0 35px 20px #777;
+	-webkit-transform: rotate(-8deg);
+	-moz-transform: rotate(-8deg);
+	-o-transform: rotate(-8deg);
+	transform: rotate(-8deg);
+}
+#test:after{
+	-webkit-transform: rotate(8deg);
+	-moz-transform: rotate(8deg);
+	-o-transform: rotate(8deg);
+	transform: rotate(8deg);
+	right: 10px;
+	left: auto;
+}
+
+button{
+	background: #e42a3f;
+	border-radius: 19px;
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	/*padding: 6px 21px 11px 20px;*/
+	margin-top: 7px;
+	padding: 10px 30px;
+	border: none;
+}
+button:hover{
+	background:#131915;
+	border: 1px solid #e42a3f;
+	/*background-image: linear-gradient(to bottom , #d90f0f , #38070f);
+	background-image: -webkit-linear-gradient(top , #d90f0f , #38070f);
+	background-image: -moz-linear-gradient(top , #d90f0f , #38070f);
+	background-image: -o-linear-gradient(top , #d90f0f , #38070f);*/
+}
+#next{
+	position: absolute;
+    left: 790px;
+    bottom: 190px;
+}
+#skip{
+	position: absolute;
+    left: 463px;
+    bottom: 190px;
+}
+.timeCounter{
+	color: #fff;
+	/*margin-left: 86%;*/
+	margin-top: 30px;
+	background: #131915;
+	padding: 15px;
+	width: 260px;
+    position: absolute;
+    right: 0;
+    top: -200px;
+    /*padding-left: 8px;*/
+}
+div#test{
+	border: 1px solid #000;
+	padding: 0 40px 40px 40px;
+}
+
+
+#skipValues{
+	width: 260px;
+	height: 150px;
+	position: absolute;
+	right: 0;
+	top: 100px;
+	background-color: #131915;
+	padding: 0px 20px;
+	color: #fff;
+}
+#skipValues span{
+	color:#e42a3f;
+	padding-right: 10px;
+	cursor: pointer;
+}

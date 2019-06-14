@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+    	<title>Sign In </title>
+    	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    	<link rel="stylesheet" type="text/css" href="css/form.css">
+    </head>
+    <body>
+	
+    	<div class="biggest">	
+    		<div class="nav">
+    			<ul>			
+    				<li><img src="download22.jpg" width="80" height="80" /></li>
+    				<li class="move1"><a class="login1" href="#"><i class="fa fa-user-o" aria-hidden="true"></i> Login</a></li>
+    				<li class="move2"><a class="sign-up" href="#"><i class="fa fa-user-o" aria-hidden="true"></i> Sign Up</a></li>
+					<hr/>
+    			</ul>   			
+	    		<div class="intro">
+	    			<div class="par">
+		    			<h3>Welcome To Your account.</h3>
+		    			<span>Log in if you have account <br>Sign up if you haven't account</span>
+	    			</div>
+	    		</div>
+    		</div>
+    		
+    		<!-- Login -->
+    		<div class="container">
+    			<div class="logged">
+	    			<div class="login">
+	    				<p><span>Login</span> To your account to see what <br>we have for you.</p><br>
+	    				<form method="post" action="">
+	    				<input type="text" id='userLogin' name="user" placeholder="Enter your userName"
+	    				onfocus="this.placeholder=''" onblur="this.placeholder='Enter your userName'"/>
+	    				<div class="error userLogin"></div>
+	    				<input type="password" name="pass" placeholder="Enter your password" id="passwordLogin" 
+	    				onfocus="this.placeholder=''" onblur="this.placeholder='Enter your password'"/>
+                        <input type="submit" name="" value="Send" id="submitLogin">
+	    				</form><br>
+	    			</div>
+    			</div>
+				<!-- register -->
+				<div class="reg">
+	    				<p><span>Register !</span> New account to see what <br>we have for you.</p><br>
+	    				<form method="post" action="index.html" > <!-- onsubmit="return validate(e)" -->
+						<input type="text" id="username" name="name" placeholder="User Name" onfocus="this.placeholder=''" 
+                        onblur="this.placeholder='User Name'"/>
+                        <div class="error username"></div>
+	    				<input type="email" name="email" id="email" placeholder="Email" onfocus="this.placeholder=''" 
+                        onblur="this.placeholder='Email'" />
+                        <div class="error email"></div>
+	    				<input type="password" id="password" name="pass" placeholder="Password" onfocus="this.placeholder=''" 
+                        onblur="this.placeholder='Password'"/>
+                        <div class="error password"></div>
+                        <input type="password" id="confirmPass" name="pass" placeholder="Confirm Password" 
+                        onfocus="this.placeholder=''"  onblur="this.placeholder='Confirm Password'"/>
+                        <div class="error confirmPass">
+						  	Confirm Password Not Matched
+						</div>
+                        <select id="job"> 
+						  	<option value="">Select Job</option>
+						    <option value="student">Student</option>
+							<option value="employee">Employee</option>
+						</select>
+						<div class="error job"></div>
+						<input type="radio" name="gender" id="male" value="Male"> <span class="gender">Male</span>
+                        <input type="radio" name="gender" id="female" value="Female"> <span class="gender">Female</span> <br>
+                        <div class="error errorGender"></div>
+                        <input type="submit" name="" value="Send" id="submit">
+	    				</form><br>
+	    		</div>
+    		</div>
+    	</div>
+
+    	<div id="userData"></div>
+
+<script type="text/javascript" src="js/form.js"></script>
+
+	</body>
+</html>
